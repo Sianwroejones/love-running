@@ -135,6 +135,15 @@ footer #social-networks {
 padding: 5%;
 color:#3a3a3a
 }
+
+/* Media query: large or landscape phones (567px and up) */
+@media screen and (min-width: 576px) {
+#photos {
+  column-count: 2;
+  column-gap: 0;
+}
+}
+
 .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
@@ -197,7 +206,8 @@ color:#3a3a3a
   /* Media query: tablets and larger (768px and up) */
   @media screen and (min-width: 768px) {
     /* Header */
-    nav {display: block;
+    nav {
+      display: block;
     position: relative;
     box-shadow: none;
     width: fit-content;
@@ -211,7 +221,7 @@ color:#3a3a3a
 .nav-toggle-label {
   display: none;
 }
-  }
+
   #logo {
     font-size: 200%;
     line-height: 75px;
@@ -312,6 +322,11 @@ border: 2px solid white;
   /* Override the heading colour set in general styles */
   color:#fafafa;
 }
+/* Gallery photos */
+#photos {
+  column-count: 3;
+}
+}
 /* Large devices (laptops and desktops, 992px and up) */
 
 @media screen and (min-width: 992px) {
@@ -322,6 +337,10 @@ border: 2px solid white;
 
   }
 
+  #photos {
+    column-count: 4;
+  }
+}
   @media screen and (min-width:1200px) {
     /*reasons section */
     #benefits {
